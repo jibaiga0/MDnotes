@@ -78,6 +78,7 @@ To learn the "parsing" of a web page:
 </body>
 </html>
 ```
+
 (if it doesn't work it might be a probleme because of copying directly from pdf. Replace `"` by `"` to fix it.)  
 
 - `//` is to use for comment.
@@ -85,7 +86,7 @@ To learn the "parsing" of a web page:
 - the `alert()` function is a *modal*. It means that the *parsing* of the page stops (brought to a halt) when `alert()` function is used and doesn't restart until the user closes the box.
 - Setting properties of the page: HTML = static (set it once, cant change it); JS = dynamic(can change it all the time.)  
 
-**So the use of JavaScript is to add some sort of intelligence or logic to the page, or to add special effects.
+**So the use of JavaScript is to add some sort of intelligence or logic to the page, or to add special effects.**
 
 ### Some "Writtings" to the page
 ```
@@ -101,6 +102,7 @@ To learn the "parsing" of a web page:
 </body>
 </html>
 ```
+
 - first three lines are to set the page as "xhtml". Not that important.
 - give an "id" to the `<p>` tag.
 - get the element who's id is XXX and set the content to "Hello World!".
@@ -140,15 +142,15 @@ Some examples:
 
 escape sequence | Character Represented
 ---             | ---
-\\b              | Backspace
-\\f              | Form feed
-\\n              | New line
-\\r              | Carriage return
-\\t              | Tab
-\\'              | Single quote
-\\"              | Double quote
-\\\              | Backslash
-\\xNN            | NN is a hexadecimal number that identifies a latin-1 special character
+\\b             | Backspace
+\\f             | Form feed
+\\n             | New line
+\\r             | Carriage return
+\\t             | Tab
+\\'             | Single quote
+\\"             | Double quote
+\\\             | Backslash
+\\xNN           | NN is a hexadecimal number that identifies a latin-1 special character
 For instance if you want to type a copyright symble ©, you will have to put `\xA9` into the JavaScript code.  
 - **Boolean Data**  
 Yes or No, positive or negative, true or false, 1 or 0.  
@@ -242,7 +244,12 @@ Why using variables?
 Store variables in memory, then calculate or processe it latter.  
 Here we are going to talk about some "number-crunching" and "text operation" with variables.  
 
+### Numerical Calculation
+operators : addition `+`, subtraction `-`, multiplication `*`, division `/`.  
+It's normaly better to put numbers into variables and do the calculation using variables.
 
+**Increment and Decrement operators.**  
+`++` for increment, `--` for decrement.  
 
 
 
