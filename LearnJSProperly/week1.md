@@ -1,116 +1,5 @@
-Learn JS Properly
+Learn JS properly
 ===
-
-# Reset and relearn JS
-## 1. Learn some HTML & CSS(done).
-## 2. Make a simple Web Site
-## 3. Read "Beginning JavaScript" Chapter 1
-### What is JavaScript?
-It's a "computer programming language"!!!!!  
-It's an "interpreted language" rather than a "compiled language".  
-Nothing to do with "Java" language.  
-
-JavaScript runs in browser with interpreters.(it can also be used in other "Hosts".)  
-But need to be careful with different browsers.  
-Standards set by W3C  
-(Some WEB working fondamental concepts. Like web server, HTTP, client, IP addresse, DNS...etc)  
-
-### Why learn JS
-- it's widely used and available.
-- it's very versatile(polyvalant), can be used in many cases.
-
-What can JavaScript do? Well......a lot!!!  
-
-### Tools needed to JavaScript Development
-- a text editor
-- a browser
-
-### The Scripts go to ...
-Since major browsers use javascript as default script language. `<script>` tag (without `type`) is enough. However use of the `type` attribute is "mandatory" according to W3C standards.
-
-Linking to an External JS file by adding :
-```
-<script type="text/javascript" src= "THE.js"></script>
-```
-Advantages of Linking!  
-- code reuse. Also easyer for maintanence.
-- make it "cacheable"!
-
-### Here Comes the First Program
-You can put `<script>` where ever you want in a file. But it's better make it inside the `<head>` or the `<body>`.  
-It's also better to always specify the "type" attribute like:
-```
-<script type="text/javascript">
-```
-Then finally the first page with JavaScript:
-```
-<html>
-    <body bgcolor="WHITE">
-        <p>Paragraph 1</p>
-        <script type="text/javascript">
-            document.bgColor = "RED";
-        </script>
-    </body>
-</html>
-```
-- `document` refers to the web page "document".
-- `bgColor` sets the background color.
-- `;` is used to indicate the end of a "statement".
-- "parsing" = gramatical analysis = read through the code and execute them.
-
-To learn the "parsing" of a web page:
-```
-<html>
-<body bgcolor="WHITE">
-    <p>Paragraph 1</p>
-    <script type="text/javascript">
-        //a comment for first script block.
-        alert("First Script Block");
-    </script>
-
-    <p>Paragraph 2</p>
-    <script type="text/javascript">
-        document.bgColor = "RED";
-        alert("Second Script Block");
-    </script>
-    
-    <p>Paragraph 3</p>
-</body>
-</html>
-```
-
-(if it doesn't work it might be a probleme because of copying directly from pdf. Replace `"` by `"` to fix it.)  
-
-- `//` is to use for comment.
-- `alert()` is a function (function = pieces of JS code. It takes some information, processes it, and gives a result.) that "alert" or "inform" the user by displaying message box. The message to be dissplay is given in te "()" as *parameter*.
-- the `alert()` function is a *modal*. It means that the *parsing* of the page stops (brought to a halt) when `alert()` function is used and doesn't restart until the user closes the box.
-- Setting properties of the page: HTML = static (set it once, cant change it); JS = dynamic(can change it all the time.)  
-
-**So the use of JavaScript is to add some sort of intelligence or logic to the page, or to add special effects.**
-
-### Some "Writtings" to the page
-```
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<body >
-    <p id="ResultsP"></p>
-    <script type="text/javascript">
-    // Script block 1
-    document.getElementById('ResultsP').innerHTML = 'Hello World!';
-    </script>
-</body>
-</html>
-```
-
-- first three lines are to set the page as "xhtml". Not that important.
-- give an "id" to the `<p>` tag.
-- get the element who's id is XXX and set the content to "Hello World!".
-- the code **should be after** the paragraph that you want to set.
-
-### and finally some "browser" problems!
-Let your page be backward compatible? or just let it "degrade gracefully"?  
-(degrade gracefully = the page gives alert or still looks "OK" with older browsers.)
 
 ## 4. Beginning Javascript Ch.2
 ### Data Types and Variables
@@ -251,6 +140,59 @@ It's normaly better to put numbers into variables and do the calculation using v
 **Increment and Decrement operators.**  
 `++` for increment, `--` for decrement.  
 
+```
+var thisNum = 0;
+thisNum = thisNum + 1;
+thisNum++;
+++thisNum;
+```
+Three lines give the same result(store 1 to "thisNum"), since the `++` operator is used alone.
+
+BUT when `++` and `--` utilize with other operators, the placement becomes effective. Ex:
+
+```
+var thisNum = 1;
+var thisVar = thisNum++ \* 20;
+alert(thisVar);
+alert(thisNum);
+```
+First do thisNum \* 20, store it to thisVar.  
+Then do thisNum + 1, store it to thisNum.  
+So the first alert gives 20, and the second alert gives 2.
+
+```
+var thisNum = 1;
+thisVar = ++thisNum \* 20;
+alert(thisVar);
+alert(thisNum);
+```
+Frist do "thisNum" + 1 then \* 20, store the result to "thisVar".  
+Also store "thisNum" + 1 to "thisNum".
+So the first alert gives 40, and the second gives 2.
+*VERY DIFFERENT HERE*
+
+Some MORE complex example:
+```
+var thisNum = 1;
+var thisVar = (thisNum++ \* 10 + 2);
+// 1. "thisNum" \* 10 + 2 = 12, store it to "thisVar".
+// 2. "thisNum" + 1 = 2, store it to "thisNum".
+thisVar = (++thisNum \* 10 + 2);
+// 1. ("thisNum" + 1) \* 10 + 2 = 22, store it to "thisVar".
+// 2. "thisNum" + 1 = 2, store it to "thisNum".
+```
+*A HUGE ERROR at p.30 in the book. Where the author said the value of "thisNum" in the first two lines is going to be 12.*
+
+*Actually with such subtlety, it can lead to bugs and security problems. So it's usually better to AVOID this syntax. so...*
+> DON'T USE `++` AND `--` IN JAVASCRIPT.  
+
+(also disscused in the YUI video of Crockford : Crockford on Javascript - part5 the end of all things. 1:09'00".)
+
+The **GOOD** alternative would be `+ =` operator. It has 3 better resons:  
+1.It also shortens/simplified the code.  
+2.It can also apply to other calculation operators `-`, `*`, and `/`.  
+3.It can operate numbers other then 1.
+4.It makes no ambiguity.
 
 
 ## Codecademy.com - JavaScript Track
