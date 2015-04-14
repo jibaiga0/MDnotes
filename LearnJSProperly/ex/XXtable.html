@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var theNumber;
+        var xTimes;
+        theNumber = prompt("enter your number", "");
+
+        for (xTimes = 1; xTimes <= theNumber || isNaN(theNumber) === true ; xTimes += 1) {
+              if(isNaN(theNumber)) {
+                  theNumber = prompt("Put in a NUMBER please","");
+                  continue;
+              }
+              document.write(theNumber + "*" + xTimes + "=" + (theNumber * xTimes) + "<br>");
+          }
+    
+    
+    </script>
+</body>
+</html>
