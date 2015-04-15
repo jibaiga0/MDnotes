@@ -1,5 +1,6 @@
 # Codecademy.com - JavaScript Track
-## Getting started with Programming
+## 1. Getting started with Programming
+### REAL BASIC
 - type a string `"NAME"` and to know it's "length" using `"name".length`.
 - basic math with `+`, `-`, `*`, `/`. 
 - write some comments with `//`
@@ -11,7 +12,7 @@
 - print out data in web page document by :`document.write()` <<-- learned it from elsewhere.
 - comparison operators: `>`, `<`, `<=`, `>=`, `===`, `!==`. (Careful, single `=` is for assignment of value, `==` or `===` is for comparison equal.)
 
-## Basic logics
+### Basic logics
 - `if` statement.
 
 ```
@@ -27,3 +28,8 @@ If this then print that in console. Otherwise print another thing in console.
 - other than `console.log()` we can use `prompt()` or `alert()` or `confirm()` to make it interactive.
 - Some more math an the precedence.( All works like in the school.)
 - The "modulo" symbol: `%` will return the **remainder** of X devided by Y: `X % Y`.
+- function `substring()` extract part of the string. Ex: `"Jason HUANG".substring(2, 9)` will extract `"son HUA"` from the string.
+
+### Variables
+
+
