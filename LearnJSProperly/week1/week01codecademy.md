@@ -46,7 +46,7 @@ var varName = data;
 - Ask user to rate the app by 10 using `prompt()` function, and print out different result using `if`...`else`. 
 
 ## 2. Functions
-### Introducint Functions
+### Introducing Functions
 - "Function" is a series of instructions put together as a package, so that we can reuse it whenever we need it.
 - syntax to declare a function:
 ```
@@ -60,7 +60,92 @@ function functionName(ARGUMENT){
     ACTION
 };
 ```
-to call this function use `functionName(ARGUMENT VALUE)`.
-- 
+to call this function use `functionName(ARGUMENT VALUE)`.  
+One brief example:
+```
+var calculate = function (number) {
+    var val = number * 10;
+    console.log(val);
+}
+calculate(20);
+```
+- make it `return` a value:
+```
+function timesTwo(number){
+    return number * 2;
+}
+//and then call it
+var calculatedNum = timesTwo(20);
+console.log(calculatedNum);
+```
+- Combine with `if`...`else` statement:  
 
+```  
+function quarter(number){
+    return number/4;
+}
 
+var theNumber = prompt("put in a number", " ");
+if (quarter(theNumber) % 3 === 0){
+    console.log("TRUE");
+} else {
+    console.log("FALSE");
+}
+```  
+- A function can take TWO (or more?) parameters. Ex: `function thisFunc(X, Y) { ACTION }`
+
+### SCOPE
+- "Global" vs "Local" variables.  
+"Outside" vs "Inside" of the function.
+
+### Build "Rock, Paper, Scissors"
+- First ask for user's choice:  
+```
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+```
+- Then mak computer chose randomly with `Math.random()`:
+```
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+	computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "paper";
+} else {
+	computerChoice = "scissors";
+}
+```
+- Make the `compare()` function and it's logic:
+```
+function compare(choice1, choice2) {
+    if (choice1 === choice2) {
+        return "The result is a tie!";
+    } else if (choice1 === "rock") {
+        if (choice2 === "scissors"){
+            return "rock wins";
+        } else {
+            return "paper wins";
+        }
+    } else if (choice1 === "paper") {
+        if (choice2 === "rock") {
+            return "paper wins";
+        } else {
+            return "scissors wins";
+        }
+    } else if (choice1 === "scissors") {
+        if (choice2 === "paper") {
+            return "scissors wins";
+        } else {
+            return "rock wins";
+        }
+    }
+}
+```
+- Finaly call the function `compare()` with `userChoice, computerChoice` as parameters:
+```
+compare(userChoice, computerChoice);
+```
+
+Think about some problems:
+1. How to varify if user puts in a valid choice?
+2. How to add another choice?
+3. How to ask players to rechose again when tied instead of just print out the result?
