@@ -50,7 +50,7 @@ var varName = data;
 - "Function" is a series of instructions put together as a package, so that we can reuse it whenever we need it.
 - syntax to declare a function:
 ```
-var functionName = function(){
+var functionName = function(ARGUMENT){
     ACTION;
 };
 ```
