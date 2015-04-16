@@ -31,5 +31,36 @@ If this then print that in console. Otherwise print another thing in console.
 - function `substring()` extract part of the string. Ex: `"Jason HUANG".substring(2, 9)` will extract `"son HUA"` from the string.
 
 ### Variables
+- Declaration:
+```
+var varName = data;
+```
+
+### A Tiny Game Project
+- First ask for confirmation: `confirm("Realy want to play?');`
+- Declear an "age" variable then assign to a "prompt()" function: `var age = prompt("What's your age?");`
+- Some `if`...`else` to check user's age.
+- `console.log` some story line.
+- Declare an "userAnswer" variable, and asigne it to a `prompt()` to ask for user to input.
+- use `if`...`else` to check for the "userAnswer". Print out different result for "yes" and others.
+- Ask user to rate the app by 10 using `prompt()` function, and print out different result using `if`...`else`. 
+
+## 2. Functions
+### Introducint Functions
+- "Function" is a series of instructions put together as a package, so that we can reuse it whenever we need it.
+- syntax to declare a function:
+```
+var functionName = function(){
+    ACTION;
+};
+```
+also
+```
+function functionName(ARGUMENT){
+    ACTION
+};
+```
+to call this function use `functionName(ARGUMENT VALUE)`.
+- 
 
 
