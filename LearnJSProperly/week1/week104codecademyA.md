@@ -60,6 +60,7 @@ function functionName(ARGUMENT){
     ACTION
 };
 ```
+But it's better to always use the first method.(declare the var first!!).  
 to call this function use `functionName(ARGUMENT VALUE)`.  
 One brief example:
 ```
