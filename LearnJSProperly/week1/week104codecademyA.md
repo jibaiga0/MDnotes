@@ -1,4 +1,7 @@
-# Codecademy.com - JavaScript Track
+Learn JS Properly
+===
+ 
+# Codecademy.com - JavaScript Track (A)
 ## 1. Getting started with Programming
 ### REAL BASIC
 - type a string `"NAME"` and to know it's "length" using `"name".length`.

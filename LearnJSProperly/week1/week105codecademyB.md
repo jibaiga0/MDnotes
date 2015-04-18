@@ -1,4 +1,7 @@
-# Codecademy.com - JavaScript Track
+Learn JS Properly
+===
+
+# Codecademy.com - JavaScript Track (B)
 ## 3. LOOP
 ### 'FOR' Loops
 - Doing repetetive jobs. Use loops.
@@ -113,7 +116,7 @@ while(slaying){
     slaying = false;
 }
 ```
-- 'if' you hit the dragon?
+- Inside the `while` loop, `if` you hit the dragon?
 ```
 if(youHit){
     console.log("Hit!!!!!");
@@ -121,4 +124,16 @@ if(youHit){
     console.log("RIP.....");
 }
 ```
+- `if(youHit)` set "totalDamage" equal to "totalDamage + damageThisRound".
+And create another `if` statement, check if totalDamage >= 4, if true, print "You finished it!", else try to get another random "youHit" value, and loop again.
+```
+totalDamage += damageThisRound;
+if(totalDamage >= 4) {
+    console.log("You win!");
+    slaying = false;
+} else {
+    youHit = Math.floor(Math.random() * 2);
+}
+```
 
+- AND IT's DONE!!!

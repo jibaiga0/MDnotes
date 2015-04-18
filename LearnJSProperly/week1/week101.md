@@ -1,9 +1,9 @@
 Learn JS properly
 ===
 
-# 1. learn some html & css(done).
-# 2. make a simple web site
-# 3. read "beginning javascript" chapter 1
+# Learn some html & css(done).
+# Make a simple web site
+# Read "beginning javascript" chapter 1
 ## what is javascript?
 It's a "computer programming language"!!!!!  
 It's an "interpreted language" rather than a "compiled language".  

@@ -1,7 +1,7 @@
 Learn JS Properly
 ===
 
-# 5.Beginning JavaScript Chapter 3. Decisions and Loops
+# Beginning JavaScript Chapter 3. Decisions and Loops
 Make computer more intelligent by giving it decision-makeing abilitys.
 
 ## What we'll learn?

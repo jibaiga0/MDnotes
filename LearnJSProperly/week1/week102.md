@@ -1,7 +1,7 @@
 Learn JS Properly
 ===
 
-# 4. Beginning Javascript Ch.2
+# Beginning Javascript Ch.2
 ## Data Types and Variables
 Information/Data comes in all sorts of forms : numbers, text, dates, times...etc.  
 1. Data types.
