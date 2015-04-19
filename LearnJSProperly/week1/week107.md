@@ -14,4 +14,14 @@ Learn JS Properly
 - Some needs to have "parameter(s)", some not.
 
 ## Creating Own Functions
+- syntax:
+```
+function funcName(funcParam){
+    ACTION;
+    return RESULT;
+}
+```
+- Use meaningful word to name you function.
+- If the `return RESULT` line is not added, the function will return *undefined*.
+
 
