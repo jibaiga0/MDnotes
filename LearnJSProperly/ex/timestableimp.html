@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XX Table improved - 叉叉乘法表(加強版)</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+<div>    
+<h1>XX Table - 叉叉乘法表</h1>
+<script>
+function timeTable(theNumber, startP, stopP){
+    for (; startP <= stopP || isNaN(theNumber) === true; startP +=1) {
+        if(isNaN(theNumber)) {
+            theNumber = prompt("Put in a NUMBER please","");
+            continue;
+        } else if(theNumber > 9999) {
+            theNumber = prompt("This number will make me go crazy!", "");
+            continue;
+        } else {
+        document.write(theNumber + " * " + startP + " = " + theNumber * startP + "<br>");
+        /}
+    }
+}
+timeTable(parseInt(prompt("number")),parseInt(prompt("start")),parseInt(prompt("stop")));
+
+</script>
+</div>
+</body>
+</html>

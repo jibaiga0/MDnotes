@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+    /*var degFhar = 12;
+    function convertToCent(){
+        degFhar = 20;
+        var degCent = 5 / 9 * (degFhar - 32);
+        return degCent;
+    }
+    document.write(convertToCent()+"<br>");
+    document.write(degFhar+"<br>");
+    
+    var sum = degFhar + 5;
+    document.write(sum);
+    document.write(degFhar+"<br>");
+    document.write(degCent+"<br>");
+    */
+    </script>
+    
+    <script>
+    //var degCent = 999;
+    function convertToCent(degFhar) {
+        degFhar = prompt("Degree?");
+        var degCent = 5 / 9 * (degFhar -32);
+        return degCent;
+    }
+    //document.write(convertToCent()+"<br>");
+    //document.write(degCent+"<br>");
+    function hotOrNot(fn) {
+        if (fn < 20){
+           
+           return "So Cold! It's " + fn; 
+        } else if(fn <50) {
+            return "HOT!!!!! It's " + fn;
+        } else {
+            return "Are you kidding me?";
+        }        
+    }
+    document.write(hotOrNot(convertToCent())); 
+
+    // call this will return an error "degFhar" is undefined. document.write(degFhar+"<br>");
+    // and this as well. document.write(degCent);
+    </script>
+</body>
+</html>
