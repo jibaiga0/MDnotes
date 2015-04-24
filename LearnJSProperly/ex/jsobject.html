@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+try{
+        var friends = {};
+friends["bill"] = {};
+friends["steve"] = {};
+
+friends["bill"]["firstName"] = "Bill";
+friends["bill"]["lastName"] = "KK";
+friends["bill"]["number"] = "012345678";
+friends["steve"]["firstName"] = "Steve";
+friends["steve"]["lastName"] = "BB";
+friends["steve"]["number"] = "012345678";
+
+friends["bill"]["address"] = ["Bill st", 9];
+friends["steve"]["address"] = ["Steve st", 10];
+
+var list = function(objectName) {
+    for(var keyHolder in objectName){
+        console.log(keyHolder);
+    }
+};
+
+var search = function(searchName){
+    for(var keyHolder in friends) {
+        if( friends[keyHolder]["firstName"] === searchName) {
+            console.log(friends[keyHolder]);
+            return friends[keyHolder];
+        }
+    }
+};
+
+list(friends);
+search("Bill");
+} catch(aVar) {
+    alert(aVar.message);
+}
+
+    </script>
+
+</body>
+</html>

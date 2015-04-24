@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+ 
+var birthYear = function() {
+    this.myBirthYear = (2015 - this.myAge);
+    return this.myBirthYear;
+};
+
+var jib = {
+    myAge: 35,
+    myBirthYear: 0,
+    myBirthYearCalc: birthYear
+};
+
+var kaif = {
+    myAge:34,
+    myBirthYear: birthYear
+};
+
+jib.myBirthYearCalc();// !!!!! remember to put () since we are calling a function/method!!!!!!!!!!
+alert(jib.myBirthYear);
+    </script>
+</body>
+</html>

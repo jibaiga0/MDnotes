@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+var birthYear = function() {
+    return (2015 - this.myAge);
+};
+
+var jib = {
+    myAge: 35,
+    myBirthYear: birthYear
+};
+
+var kaif = {
+    myAge:34,
+    myBirthYear: birthYear
+};
+ 
+var jibBirthYear = jib.myBirthYear();
+alert(jibBirthYear);
+var kaifBirthYear = kaif.myBirthYear();
+alert(kaifBirthYear);
+    </script>
+
+</body>
+</html>
