@@ -36,6 +36,7 @@ for(var myPlaceHolder in myObject){
 ```
 
 ## Time for OOP
+### Class and Prototype
 - **Class** = *type*, or a *category of objects*.
 - Making an object constructor is to create a *class*.(the `Circle()` constructor can also be think of as a `Circle` class.)
 ```
@@ -58,7 +59,7 @@ var snoopy = new Dog("Beagle");
 snoopy.bark();
 ```
 The above code set a `Dog()` constructor/class. Create a dog called buddy, and teach it to bark. But since we didn't teach snoopy to bark, the `snoopy.bark()` method will not work!
-To make all dogs bark after the creation of the constructor, we can use `prototype`:
+To make all dogs bark after the creation of the constructor, we can use `prototype`: (`OBJECT.prototype.METHODNAME`)
 ```
 function Dog(breed){
     this.breed = breed;
@@ -70,4 +71,7 @@ var buddy = new Dog("Golden Retriever");
 var snoopy = new Dog("Beagle");
 ```
 Now we use `prototype` to add a method into the constructor, so that both dogs can bark!
+
+### Inheritance
+- **Inheritance** allows one class o see and use he methods and properies of another class.
 
