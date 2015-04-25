@@ -73,5 +73,42 @@ var snoopy = new Dog("Beagle");
 Now we use `prototype` to add a method into the constructor, so that both dogs can bark!
 
 ### Inheritance
-- **Inheritance** allows one class o see and use he methods and properies of another class.
+- **Inheritance** allows one class to see and use the methods and properies of another class.
+- Take *ANIMAL* and *DOG* for example. Normaly if we want to add a method called *sayName* to *ANIMAL* and *DOG*, we do it as follow:
+```
+// Create an Animal() object.
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+};
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+// Crete a Dog() object.
+function Dog(name, numLegs){
+    this.name = name;
+    this.numLegs = numLegs;
+};
+Dog.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+```
+Seems like we are doing many retyping...
+- Here comes the *prototype* again:
+```
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+};
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+function Dog(name){
+    this.name = name;
+    this.numLegs  = 4;
+};
+Dog.prototype = new Animal();
+```
+
 
