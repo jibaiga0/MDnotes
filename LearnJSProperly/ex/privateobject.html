@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,17 @@
         this.age = age;
         var bankBalance = 7500;
         // this makes bankBalance a Private variable.
-        this.enoughMoney = function(){
-            if(bankBalance > 7000){
-                alert("Good!");
-            } else {
-                alert("Earn More money Please!");
-            };
+        this.enoughMoney = function(pass){
+            pass = prompt("enter password");
+                if(pass === "1234"){
+                    if(bankBalance > 7000){
+                        alert("Good!");
+                    } else {
+                        alert("Earn More money Please!");
+                    };
+                } else {
+                    alert("Wrong Password!");
+                };
             return 0
         }
     }

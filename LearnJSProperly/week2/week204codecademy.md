@@ -156,4 +156,57 @@ console.log(john.bankBalance);
 The property "bankBalance" is not accessable outside of the object, so the code `console.log(john.bankBalance);` will print out "undefined".
 - If we want to access private properties, we can do it by creating a public method:
 ```
+funcion Person(first, last, age){
+    this.firstname = first;
+    this.lastname = last;
+    this.age = age;
+    var bankBalance = 7500;
+    // this makes bankBalance a Private variable.
+    this.enoughMoney = function(){
+        if(bankBalance > 7000){
+            alert("Good!");
+        } else {
+            alert("Earn More money Please!");
+        };
+        return 0
+    }
+}
+var john = new Person("J", "H", 77);
+
+console.log(john.age);
+console.log(john.bankBalance);
+john.enoughMoney();
+```
+The public method `enoughMoney()` will check the private variable `bankBalance` to see if the money is enough. When it's called, it'll print out the result.
+- A method can also be private by delaring it with `var` inside an object.
+- Passing Arguments:
+```
+funcion Person(first, last, age){
+    this.firstname = first;
+    this.lastname = last;
+    this.age = age;
+    var bankBalance = 7500;
+    // this makes bankBalance a Private variable.
+    this.enoughMoney = function(passWord){
+        passWord = prompt("Enter Password:");
+        if(passWord === "1234"){
+            if(bankBalance > 7000){
+                alert("Good!");
+            } else {
+                alert("Earn More money Please!");
+            };
+        } else {
+            alert("Wrong Password!");
+        };
+        return 0
+    }
+}
+var john = new Person("J", "H", 77);
+
+console.log(john.age);
+console.log(john.bankBalance);
+john.enoughMoney();
+```
+Now we sould enter a password to see the result!
+- 
 
