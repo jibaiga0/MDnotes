@@ -110,5 +110,50 @@ function Dog(name){
 };
 Dog.prototype = new Animal();
 ```
+And now we can use `sayName()` function in the `Dog` object.
+- The **Prototype Chain** dogs are animals, and racing dogs are dogs, so racing dogs are also animals!
+So we can make `racingDog` inherent from `Dog`, and `Dog` inherent from `Animal`. So that `racingDog` can also use the properties or methods from `Animal`.
+```
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+    this.isAlive = true;
+};
+function Dog(name){
+    this.name = name;
+    this.numLegs  = 4;
+};
+function racingDog(name){
+    this.name = name;
+    this.saying= "WOOOOOF!";
+}
+Dog.prototype = new Animal();
+racingDog.prototype = new Dog();
 
+var thunder = new racingDog("Thunder");
+
+console.log(thunder.saying);
+console.log(thunder.numLegs);
+console.log(thunder.isAlive);
+```
+
+### Public or Private
+- Object properties are **Automatically Public**, it can be accessed everywhere in the code.
+- How ever, we can create **Private** variables whitch can only be accessed from within the object.
+```
+function Person(first, last, age){
+    this.firstname = first;
+    this.lastname = last;
+    this.age = age;
+    var bankBalance = 7500;
+    // this makes bankBalance a Private variable.
+}
+var john = new Person("J", "H", 77);
+
+console.log(john.age);
+console.log(john.bankBalance);
+```
+The property "bankBalance" is not accessable outside of the object, so the code `console.log(john.bankBalance);` will print out "undefined".
+- If we want to access private properties, we can do it by creating a public method:
+```
 
