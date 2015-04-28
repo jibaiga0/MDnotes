@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var myObject = { "name" : "JJ"};
+        var myObjRef = myObject;
+        alert(myObjRef.name);
+
+        myObject.name = "KK";
+        alert(myObjRef.name);
+
+        var myString = "JJ";
+        var myStr2 = myString;
+        myString = "KK";
+        alert(myStr2); // Will print out JJ.
+
+    </script>
+</body>
+</html>
