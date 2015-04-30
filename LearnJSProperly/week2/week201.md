@@ -37,7 +37,7 @@ alert(myStr2); // Will print out JJ.
 - To create a *String* object: `var myString = new String("This is a string");`. (But normaly we only do:`var myString = "This is a string";`)
 - To use the *length* property of a string: `var stringLenght = myString.length;`.
 
-## Native Object Types
+## Native Object Types 1
 ### String Objects
 Create it using *litteral* expression:`var myString = "Hello";` (It's the better way!).
 
@@ -153,5 +153,16 @@ myArray.reverse();
 // makes the array become ["ABC", "abc", "def", "DEF", 12, 56, 34]
 ```
 8. **indexOf()** and **lastIndexOf()** (method)  
-
+Finding array elements. Similar to the `indexOf()` and `lastIndexOf()` methods for the string objects. It returns the first/last occurence of the item in the array.  
+It will return `-1` if the provided value can't be found.  
+9. Iterative Methods:  
+Iterating through the array without looping.  
+They all must accept 3 arguments as following code:  
+```
+function functionName(value, index, array) {
+    ACTION;
+}
+```
+a. **every()**, **some()** and **filter()** (method)  
+Test each elements. 
 
