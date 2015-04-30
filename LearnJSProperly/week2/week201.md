@@ -62,6 +62,11 @@ var mySubStr = myPhrase.substr(whereSecret, 6);
 alert(mySubStr);
 ```  
 4. **toLowerCase()** and **toUpperCase()** (method)  
-Converting Case!
+Converting Case. Takes no parameters(But still need to put `()` since it's a *method*. Ex:   
+```
+var myString = "WoRdS";
+alert(myString.toLowerCase()); // this will alert "words".
+```
+5. **charAt()** and **charCodeAt()** (method)
 
 
