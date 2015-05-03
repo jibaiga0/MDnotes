@@ -9,9 +9,15 @@ Learn JS properly
 - Retrieving the browser's geo location
 - Detecting the user's browser
 ## The "Browser" as Object
-We already know `alert()` and `prompt()` methods of the **browser** object.  
+We already know `alert()` and `prompt()` methods of the **window** object.  
+We also used the `write()` method of the **document** object.  
+Since different browsers have different BOM properties or objects. It's better sticking to the core functionality of the BOM, to avoid compatibility problems among different browsers.  
+The BOM has a hierarchy:
 
-
+| window   |         |           |        |          |
+| ---      | ---     | ---       | ---    | ---      |
+| location | history | navigator | screen | document |
+|          |         |           |        | (DOM)    |
 
 
 # (From Itunes U)Advanced Topics in Web Development

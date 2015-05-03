@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+    // Print out the last character of the user input.
+        var yourString = prompt("Enter something:");
+        var lastChar = yourString.charAt(yourString.length - 1);
+        alert(lastChar);
+
+    // check the last character's case.
+        var charCase = "Not a character or a number.";
+        var charCode = lastChar.charCodeAt(0);
+        if (charCode >= "A".charCodeAt(0) && charCode <= "Z".charCodeAt(0)) {
+            charCase = "Upper case character.";
+        } else if (charCode >= "a".charCodeAt(0) && charCode <= "z".charCodeAt(0)) {
+            charCase = "Lower case character.";
+        } else if (charCode >= "0".charCodeAt(0) && charCode <= "9".charCodeAt(0)) {
+            charCase = "Number!";
+        } else {
+        }
+        alert(charCase);
+
+
+
+    </script>
+</body>
+</html>
