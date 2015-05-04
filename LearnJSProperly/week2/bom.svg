@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="29" width="96" y="13" x="15" stroke-width="2" stroke="#0a0a0a" fill="#c1bdbd"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_3" y="35" x="59" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">window</text>
+  <rect id="svg_9" height="1" width="0" y="92" x="65" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="none"/>
+  <rect id="svg_10" height="0" width="1" y="92" x="64" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="none"/>
+  <rect id="svg_13" height="29" width="92.000011" y="58" x="15" stroke-width="2" stroke="#000000" fill="#d4ffaa"/>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="60.933334" y="80" id="svg_15" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve">location</text>
+  <rect height="29" width="81.000003" y="97" x="76" stroke-width="2" stroke="#000000" fill="#d4ffaa" id="svg_16"/>
+  <rect height="29" width="102.999998" y="61" x="239" stroke-width="2" stroke="#000000" fill="#d4ffaa" id="svg_17"/>
+  <rect height="29" width="76.000006" y="60" x="134" stroke-width="2" stroke="#000000" fill="#d4ffaa" id="svg_18"/>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="118.166664" y="118" id="svg_19" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve">history</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="292.166664" y="82" id="svg_20" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve">navigator</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="171.64167" y="81" id="svg_21" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve">screen</text>
+  <rect height="29.999999" width="113.000001" y="59" x="373.000001" stroke-width="2" stroke="#000000" fill="#d4ffaa" id="svg_22"/>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="431.51667" y="82" id="svg_23" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve">document</text>
+  <rect height="29.999999" width="90.000009" y="100.5" x="310" stroke-width="2" stroke="#000000" fill="#d4ffaa" id="svg_25"/>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="356.049995" y="121.5" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_26">frame[]</text>
+  <rect height="29" width="70.000004" y="99" x="191.999999" stroke-width="2" stroke="#000000" fill="#d4ffaa" id="svg_27"/>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="226.083332" y="120" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_28">event</text>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="51" y1="43" x2="51" y2="57.035669" id="svg_29"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="446.999991" y1="50" x2="51.994806" y2="50" id="svg_30"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="116" y1="50" x2="116" y2="96" id="svg_32"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="168" y1="49" x2="168" y2="60.18034" id="svg_33"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="221" y1="50" x2="221" y2="98" id="svg_34"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="285" y1="51" x2="285" y2="60" id="svg_35"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="353" y1="51" x2="353" y2="101.089919" id="svg_36"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="446" y1="50" x2="446" y2="59" id="svg_37"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="445" y1="87" x2="445" y2="138.156622" id="svg_39"/>
+  <rect height="20.725352" width="50" y="140.499999" x="423.000002" stroke-width="2" stroke="#000000" fill="#aaffff" id="svg_42"/>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="476.807238" y="160.85168" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_43" transform="matrix(0.755196, 0, 0, 0.755196, 87.3829, 34.6398)">DOM</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="547.297314" y="60.3252" id="svg_44" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.750654, 0, 0, 0.750654, 112.708, 7.23103)">...and more</text>
+ </g>
+</svg>
