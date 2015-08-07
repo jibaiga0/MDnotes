@@ -9,6 +9,12 @@
 ##第一節 新建資料庫
 新建資料庫有兩種方式，一種是在自已電腦上建立，另一種則是到GitHub網站上建立一個帳號，然後線上創建資料庫，以下分別介紹。
 
+
+git config --global user.name "XXXX"
+git config --global user.email "XXXX@XXX.XXX"
+
+git config --list
+
 ###本地電腦創建資料庫
 非常簡單，找到一個你想要儲存資料庫的資料夾，在終端機裡進入這個資料夾，打下指令：
 ```
