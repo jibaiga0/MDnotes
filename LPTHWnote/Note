@@ -1,0 +1,21 @@
+1. install and setup python
+	to make it easy, I just install a Linux system in whitch python is always there!!
+
+2. Things about editor and bash commands I already know. And I USE VIM!!!!
+
+3. learn how to '''print'''. And looks like '''# ''' is to comment out things(IMPORTANT TO COMMENT THINGS!!!).
+
+4. make utf-8 work add this : '''# -*- coding: utf-8 -*- ''' at the top of the file.
+
+5. OK, now learn some MATH!!!
+	math symbols:	+ - / * % < > <= >= 
+
+6. Assignment  of variables and do the calculation.
+	To do '''if....else''' it should be like : 
+	'if XXXXXXX :
+		do this
+	else :
+		do that'
+
+
+
