@@ -122,5 +122,66 @@ print "Average spam confidence:", averagenum
 
 ###Week4 Chapter 8 lists
 1. List is a kind of Collection
+	values in `[ ]`
+	list elements can be any python object even another list!
+	list can also be empty
+
+2. looking inside lists 
+	useing index 0, 1, 2, 3......
+3. strings are immutable (cant change the content of a string, but we can reassign another string to replace it )
+	lists are mutable
+	can be concatenate
+	can be sliced
+4. functions that can be used with strings
+	`len()`
+	`range()` create a list with the given number, or the number of the given list)
+	`dir()` to check what can we do with it.
+	`append()` to add elements
+	use `in` `not in` to check if an element is in the list
+	`sort()` to sort the elements in alphabetic order
+	`max()` `min()` `sum()` it is kinda obvious what they do.....(but strings can not be sum up)
+
+5. strings and lists
+	use `split()` to break a phrase into word list. 
+	use the character inside the `()` to define what the split will based on.
+	Ex: 
+	```
+	phrase = 'jason;huang;munkee'
+	words = phrase.split(';')
+	```
+	the words will be a list with 3 elements: jason huang munkee
 	
+	
+Exercise 8.1
+
+Open the file romeo.txt and read it line by line. For each line, split the line into a list of words using the split() method. The program should build a list of words. For each word on each line check to see if the word is already in the list and if not append it to the list. When the program completes, sort and print the resulting words in alphabetical order.
+
+You can download the sample data at http://www.pythonlearn.com/code/romeo.txt
+```
+fname = raw_input("Enter file name: ")
+fh = open(fname)
+lst = list()
+
+for line in fh:
+    
+    words = line.split()
+    
+    if len(lst) == 0 :
+        lst = words
+        
+    else:
+        for wd in words:
+            if wd in lst :
+                continue
+            else:
+                lst.append(wd)
+
+lst.sort()
+    
+print lst
+```
+
+NOTE: append() and sort() dont need to be assign to another variable, just put it after the list we want to append or sort!!!!!
+
+
 
