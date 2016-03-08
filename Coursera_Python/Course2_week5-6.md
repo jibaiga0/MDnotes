@@ -134,6 +134,5 @@ print  maxemail, icounts
 ```
 
 
-
-	
-
+###Week 6 Tuples
+1. it is a non-modifiable list
