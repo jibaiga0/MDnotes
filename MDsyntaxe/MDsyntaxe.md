@@ -1,7 +1,7 @@
 MD Syntaxe
 ===
 
-##Titles
+## Titles
 
 `===` = h1
 
@@ -11,18 +11,18 @@ MD Syntaxe
 
 `###` = h3
 
-##Links
+## Links
 `[example](https://link.com)`
 
 [example](https://link.com)
 
-###link + image
+### link + image
 `[![imgname](/url/img.img)](https://img+link.com)`
 
 [![imgname](/url/img.img)](https://img+link.com)
 
-##List
-###unnumbered
+## List
+### unnumbered
 ```
 - this
 - that
@@ -33,7 +33,7 @@ MD Syntaxe
 - that
 - and that
 
-###numbered
+### numbered
 ```
 1. first
 2. second
